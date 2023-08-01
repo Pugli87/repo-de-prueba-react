@@ -35,7 +35,7 @@ export default class CicloVida extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(2, ' El estado o las props del componente han camiado');
+    console.log(2, ' El estado o las props del componente han cambiado');
     console.log(prevProps);
     console.log(prevState);
   }

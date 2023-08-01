@@ -9,6 +9,7 @@ import Counter from './Counter';
 import ComunicacionComponente from './ComunicacionComponentes';
 import CicloVida from './CicloVida';
 import { LoginForm, ElementosControlados } from './formularios/Formularios';
+import AjaxApis from './AjaxApis';
 
 const App = () => (
   <div>
@@ -39,6 +40,8 @@ const App = () => (
     <LoginForm onSubmit={values => console.log(values)} />
     <hr />
     <ElementosControlados />
+    <hr />
+    <AjaxApis />
   </div>
 );
 
