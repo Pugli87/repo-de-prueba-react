@@ -42,8 +42,8 @@ export default class AjaxApis extends Component {
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'space-between',
-      //maxWidth: '800px', // Optional, adjust the width as needed
-      //margin: '0 auto', // Optional, center the container horizontally
+      maxWidth: '800px', // Optional, adjust the width as needed
+      margin: '0 auto', // Optional, center the container horizontally
     };
     return (
       <>
