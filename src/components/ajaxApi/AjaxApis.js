@@ -1,13 +1,5 @@
 import React, { Component } from 'react';
-
-function Pokemon(props) {
-  return (
-    <figure>
-      <img src={props.avatar} alt={props.name}></img>
-      <figcaption>{props.name}</figcaption>
-    </figure>
-  );
-}
+import Pokemon from './Pokemon';
 
 export default class AjaxApis extends Component {
   state = {
@@ -46,16 +38,25 @@ export default class AjaxApis extends Component {
   }
 
   render() {
+    const containerStyle = {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-between',
+      //maxWidth: '800px', // Optional, adjust the width as needed
+      //margin: '0 auto', // Optional, center the container horizontally
+    };
     return (
       <>
         <h2>Peticiones asíncronas en componentes de clase</h2>
-        {this.state.pokemons.length === 0 ? (
-          <h3>Cargando...</h3>
-        ) : (
-          this.state.pokemons.map(el => (
-            <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
-          ))
-        )}
+        <div style={containerStyle}>
+          {this.state.pokemons.length === 0 ? (
+            <h3>Cargando...</h3>
+          ) : (
+            this.state.pokemons.map(el => (
+              <Pokemon key={el.id} name={el.name} avatar={el.avatar} />
+            ))
+          )}
+        </div>
       </>
     );
   }

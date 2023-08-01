@@ -9,7 +9,7 @@ import Counter from './Counter';
 import ComunicacionComponente from './ComunicacionComponentes';
 import CicloVida from './CicloVida';
 import { LoginForm, ElementosControlados } from './formularios/Formularios';
-import AjaxApis from './AjaxApis';
+import AjaxApis from './ajaxApi/AjaxApis';
 
 const App = () => (
   <div>
