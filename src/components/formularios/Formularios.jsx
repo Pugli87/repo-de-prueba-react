@@ -44,8 +44,8 @@ export class LoginForm extends Component {
           placeholder="Name"
           required
         />
-        <Input type="text" name="login" />
-        <Input type="password" name="password" />
+        <Input type="text" name="login" placeholder="Correo" />
+        <Input type="password" name="password" placeholder="Contraseña" />
         <Button type="submit">Login</Button>
       </Form>
     );
