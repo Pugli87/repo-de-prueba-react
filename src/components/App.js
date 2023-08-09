@@ -10,6 +10,8 @@ import ComunicacionComponente from './ComunicacionComponentes';
 import CicloVida from './CicloVida';
 import { LoginForm, ElementosControlados } from './formularios/Formularios';
 import AjaxApis from './ajaxApi/AjaxApis';
+import PeticionesHttp from './PeticionesHttp/PeticionesHttp';
+import ContadorHooks from './ContadorHooks';
 
 const App = () => (
   <div>
@@ -42,6 +44,11 @@ const App = () => (
     <ElementosControlados />
     <hr />
     <AjaxApis />
+    <hr />
+    <PeticionesHttp />
+    <hr />
+    <ContadorHooks titulo="Seguidores" />
+    {/* Paso de propiedad por defecto */}
   </div>
 );
 
